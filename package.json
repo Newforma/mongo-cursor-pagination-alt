@@ -1,6 +1,6 @@
 {
   "name": "@newforma/mongo-cursor-pagination-alt",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Cursor-based pagination for MongoDB",
   "license": "MIT",
   "author": "Gustavo P. Cardoso <https://twitter.com/gustavo_pch>",
@@ -13,9 +13,14 @@
     "src"
   ],
   "scripts": {
-    "prepare": "npm run build",
-    "build": "tsdx build --tsconfig ./tsconfig.build.json",
-    "test": "yarn check --integrity && tsdx lint && tsc --noEmit && tsdx test"
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "prettier": "prettier --write \"{src,test}/**/*.ts\"",
+    "prettier-check": "prettier --check \"{src,test}/**/*.ts\"",
+    "build": "npm run prettier-check && npm run lint && tsc -p tsconfig.json",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "base64-url": "^2.3.3",
@@ -35,9 +40,13 @@
     "@types/lodash.mapvalues": "4.6.6",
     "@types/mongodb": "3.5.2",
     "lint-staged": "10.0.9",
+    "jest": "26.6.3",
+    "jest-jenkins-reporter": "1.0.2",
     "mongodb": "3.5.5",
     "mongodb-memory-server": "6.4.1",
+    "prettier": "2.2.1",
     "tsc-files": "1.0.0",
+    "ts-jest": "26.4.4",
     "tsdx": "0.13.0",
     "tslib": "1.11.1",
     "typescript": "3.8.3"
