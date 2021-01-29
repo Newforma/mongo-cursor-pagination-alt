@@ -2,9 +2,9 @@ export {
   AggregatePaginatedParams,
   AggregatePaginatedResult,
   aggregatePaginated,
-} from './aggregate-paginated'
+} from "./aggregate-paginated";
 export {
   FindPaginatedParams,
   FindPaginatedResult,
   findPaginated,
-} from './find-paginated'
+} from "./find-paginated";
