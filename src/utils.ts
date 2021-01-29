@@ -106,7 +106,7 @@ export const normalizeDirectionParams = ({
     return {
       limit: Math.max(1, last ?? 20),
       cursor: before ? decodeCursor(before) : null,
-      sort: mapValues(sort, value => value * -1),
+      sort: mapValues(sort, (value) => value * -1),
       paginatingBackwards: true,
     }
   }

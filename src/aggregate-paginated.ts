@@ -71,7 +71,7 @@ export const aggregatePaginated = async <TDocument extends BaseDocument>(
     desiredDocuments.reverse()
   }
 
-  const edges = desiredDocuments.map(document => ({
+  const edges = desiredDocuments.map((document) => ({
     cursor: encodeCursor(buildCursor(document, sort)),
     node: document,
   }))
