@@ -34,6 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
+    "@newforma/presets-lambda": "git+https://github.com/Newforma/presets-lambda.git#v4.0.0",
     "@types/base64-url": "2.2.0",
     "@types/jest": "25.1.4",
     "@types/lodash.get": "4.4.6",
