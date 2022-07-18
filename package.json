@@ -38,7 +38,7 @@
     "lodash": "4.17.21"
   },
   "peerDependencies": {
-    "mongodb": "^4.8.x"
+    "mongodb": "4.8.x"
   },
   "devDependencies": {
     "@jest/globals": "26.6.2",
