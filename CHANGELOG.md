@@ -1,3 +1,6 @@
+## 0.4.1
+-   Updated bson dependency
+
 ## 0.4.0
 -   Updated mongodb dependency
 
