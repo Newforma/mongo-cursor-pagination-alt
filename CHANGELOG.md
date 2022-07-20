@@ -1,3 +1,6 @@
+## 0.4.2
+-   Exported types
+
 ## 0.4.1
 -   Updated bson dependency
 
